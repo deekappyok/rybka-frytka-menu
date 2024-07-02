@@ -1,0 +1,25 @@
+.hero_subpage {
+
+  &_content {
+    position: relative;
+    padding: 100px 0;
+
+    hr {
+      position: absolute;
+      width: 80%;
+      margin-top: 10px;
+      opacity: .1;
+    }
+
+    span {
+      letter-spacing: 4px;
+      font-size: 14px;
+      font-weight: 400;
+      opacity: .65;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+}

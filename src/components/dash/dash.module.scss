@@ -1,0 +1,91 @@
+
+.dash {
+    // position in center
+    overflow-y: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 90%;
+    background-color: #f0f0f0;
+    height: 100vh;
+
+    &_nav {
+        ul {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+
+            li {
+                // button style
+                list-style-type: none;
+                padding: 0.5rem;
+                margin: 0.5rem;
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 2rem;
+
+                background-color: #2631cc;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+    
+    button {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.6rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #f0f0f0;
+        background-color: #b60ba8;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+            background-color: #2631cc;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+
+        td {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.6rem;
+            padding: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+
+    }
+
+    input {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.6rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #f0f0f0;
+        background-color: #a1d9dd;
+    }
+}

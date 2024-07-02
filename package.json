@@ -1,0 +1,37 @@
+{
+  "name": "mchub-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^13.0.5",
+    "@prisma/client": "^4.7.1",
+    "@tanstack/react-query": "^4.20.4",
+    "@trpc/client": "^10.5.0",
+    "@trpc/next": "^10.5.0",
+    "@trpc/react-query": "^10.5.0",
+    "@trpc/server": "^10.5.0",
+    "@types/crypto-js": "^4.1.1",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "crypto-js": "^4.1.1",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "fs": "0.0.1-security",
+    "next": "13.1.1",
+    "pocketbase": "^0.21.2",
+    "prisma": "^4.9.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.57.1",
+    "superjson": "^1.12.0",
+    "typescript": "4.9.4",
+    "zod": "^3.20.2"
+  }
+}
