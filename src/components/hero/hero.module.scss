@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+.toast {
+
+  // center using margin
+  margin: -15em;
+  
+
+  width: 80.5em;
+  height: 10em;
+  border-radius: 20px;
+}
+
+.toast__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 4.1rem;
+  border-radius: 5em;
+}
+
+.notify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
 
 .hero {
 
@@ -60,6 +87,17 @@
       &_drinks_cold { 
         grid-area: 3 / 2 / 4 / 3; 
         
+        // animation load
+        animation: fadeIn 1s ease-in-out;
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
         &_split {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -71,16 +109,63 @@
       }
       &_title { 
         grid-area: 1 / 3 / 2 / 4; 
+          animation: float 9s ease-in-out infinite;
+
       }
       &_kids { 
         grid-area: 2 / 3 / 3 / 4; 
       }
       &_drinks_warm { 
+        
+        animation: fadeIn 1s ease-in-out;
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
         grid-area: 3 / 3 / 4 / 4; 
       }
     }
   }
-
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(5px, -5px);
+    }
+    20% {
+      transform: translate(-10px, -15px);
+    }
+    30% {
+      transform: translate(15px, -20px);
+    }
+    40% {
+      transform: translate(-20px, -25px);
+    }
+    50% {
+      transform: translate(25px, -30px);
+    }
+    60% {
+      transform: translate(-30px, -25px);
+    }
+    70% {
+      transform: translate(20px, -20px);
+    }
+    80% {
+      transform: translate(-15px, -15px);
+    }
+    90% {
+      transform: translate(10px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
   &_title {
     font-family: "Nothing You Could Do", cursive;
     font-weight: 400;
